@@ -1,0 +1,19 @@
+body
+{
+    background-color: yellow;
+}
+
+button
+{
+    margin: 10px;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+button:hover
+{
+    background-color: green;
+}
+
