@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <script type="text/javascript">
+      
+      var a = Number(prompt("enter grade 1"));
+      var b = Number(prompt("enter grade 2"));
+      var c = Number(prompt("enter grade 3"));
+      var d = Number(prompt("enter grade 4"));
+      var e = Number(prompt("enter grade 5"));
+
+      var sum        = a + b + c + d + e;
+      var average    = sum/5;
+      var percentage = average;
+       
+      
+      document.write("sum of ", a , " , ", b , " , ", c ," , ", d , " , " , e , " is ", sum ," out of 500");
+      document.write("<br>")
+      document.write("average of ", a , " , ", b , " , ", c ," , ", d , " , " , e , " is ", average);
+      document.write("<br>")
+      document.write("percentage of ", a , " , ", b , " , ", c ," , ", d , " , " , e , " is ", percentage, "%");
+      document.write("<br>")
+
+      if (percentage >= 90)
+      {
+        console.log("Grade A");
+        document.write("Grade A");
+      
+      }else if (percentage >= 80)
+      {
+        console.log("Grade B");
+        document.write("Grade B");
+      
+      }else if (percentage >= 70)
+      {
+        console.log("Grade C");
+        document.write("Grade C");
+      
+      }else if (percentage >= 60)
+      {
+        console.log("Grade D");
+        document.write("Grade D");
+      
+      }else if (percentage >= 40)
+      {
+        console.log("Grade E");
+        document.write("Grade E");
+      
+      }else if (percentage < 40)
+      {
+        console.log("Grade F");
+        document.write("Grade F");
+      }
+      
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

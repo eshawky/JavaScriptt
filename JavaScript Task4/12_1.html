@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <script type="text/javascript">
+      
+      var x = Number(prompt("enter number1"));
+      var y = Number(prompt("enter number2"));
+
+      document.write("<br><br>Method1<br>");
+      var power = Math.pow(x,y);
+      console.log("power of ", x," and ", y, " is ", power);
+      document.write("power of ", x," and ", y, " is ", power);
+    
+      document.write("<br><br>Method2<br>");
+      var result = x;
+      for (var i=1; i<y; i++)
+      {
+        result*= x
+      } 
+      console.log("power of ", x," and ", y, " is ", result);
+      document.write("power of ", x," and ", y, " is ", result);
+    
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
