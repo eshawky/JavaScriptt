@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+   <div class="container">
+
+    <form class="main-form form">
+
+      <label for="name" class="form-control">Student Name</label>
+      <input type="text" id="name" class="form-control"/>
+
+      <label for="mail" class="form-control">Student Mail</label>
+      <input type="text" id="mail" class="form-control"/>
+
+      <label for="sid" class="form-control">Student ID</label>
+      <input type="number" id="sid"  class="form-control"/>
+
+      <label for="year" class="form-control">Student Year</label>
+      <input type="number" id="year" class="form-control"/>
+      
+      <input type="submit" id="add_id" class="btn submit" onclick="addStudent()" value="Add product"/>
+      <input type="submit" id="update_id" class="btn submit" onclick="updateStudent()" value="Update product"/>
+
+    </form>
+
+    <div class="search">
+      <p>Search by Student Name</p>
+      <input type="text" placeholder="search" oninput="searchStudent(this.value)"/> 
+    </div>
+
+    <div class="row">
+
+      <table class="table" id="table" border="2">
+        <thead id="thead">
+          <td>Index</td>
+          <td>Student Name</td>
+          <td>Student Mail</td>
+          <td>Student ID</td>
+          <td>Student Year</td>
+          <td>Delete</td>
+          <td>Update</td>
+          
+        </thead>
+        <tbody id="tbody">
+
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    
+
+   </div> 
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
