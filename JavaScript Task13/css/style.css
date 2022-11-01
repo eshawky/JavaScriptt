@@ -1,0 +1,20 @@
+body
+{
+    background-color: yellow;
+}
+
+#myDiv
+{
+    width: 200px;
+    height:  500px;
+    margin: 10px;
+    background-color: red;
+}
+
+button
+{
+        margin: 10px;
+        background-color: red;
+        width: 200px;
+        height: 100px;
+}
