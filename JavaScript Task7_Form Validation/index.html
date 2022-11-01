@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sign in Form</title>
+
+</head>
+
+<body>
+
+
+   <div class="container">
+
+    <form class="main-form form" action="index2.html">
+
+              <div class="div_class" id="div_error">
+                <p  id="p_error"></p>
+              </div>
+
+              <label for="name_form" class="form-control">Name</label>
+              <input type="text" id="name_form" class="form-control"  >
+              <p class="ifValid" id="ifvalid_name"></p>
+
+              <label for="mail_form" class="form-control">E-mail</label>
+              <input type="text" id="mail_form" class="form-control" >
+              <p class="ifValid" id="ifvalid_mail"></p>
+              
+              <label for="gender" class="form-control">Gender</label>
+              <select id="gender" name="track">
+                <option value="male"  > Male  </option>
+                <option value="female"> Female</option>                          
+              </select>        
+              <p class="ifValid" id="ifvalid_gender"></p>
+
+              <label for="pass_form" class="form-control">Password</label>
+              <input type="text" id="pass_form" class="form-control" >
+              <p class="ifValid" id="ifvalid_pass"></p>
+
+              <button id="submit" class = 'btn submit' onclick="validateInputs()">Sign in</button>
+          
+    </form>
+
+    
+   </div> 
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

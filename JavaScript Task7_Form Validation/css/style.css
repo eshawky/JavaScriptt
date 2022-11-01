@@ -1,0 +1,55 @@
+:root
+{
+    --bs-primary: #1abc9c;
+    --bs-secondary: #2c3e50;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --font-size:16px;
+}
+
+.container
+{
+    width:500px;
+    height:500px;
+    background-color: var(--bs-light); 
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+.main-form
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    margin-top:20px;   
+}
+
+.form .submit
+{
+    margin-top: 10px;
+    background-color: var(--bs-primary);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ifValid
+{
+    color: green;   
+}
+
+.div_error
+{
+    display: none;
+}
+
+#p_error
+{
+    color: red
+}
