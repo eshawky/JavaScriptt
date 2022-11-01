@@ -1,0 +1,44 @@
+:root
+{
+    --bs-primary: #1abc9c;
+    --bs-secondary: #2c3e50;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --font-size:16px;
+}
+
+.red
+{
+    width:100px;
+    height:100px;
+    background-color: red;
+    margin-bottom:50px;
+
+}
+
+.orange
+{
+    width:100px;
+    height:100px;
+    background-color: orange;
+    margin-bottom:50px;
+    
+}
+
+.blue
+{
+    width:100px;
+    height:100px;
+    background-color: blue;
+    margin-bottom:50px;
+
+}
+
+.green
+{
+    width:100px;
+    height:100px;
+    background-color: green;
+    margin-bottom:50px;
+
+}
