@@ -1,0 +1,1 @@
+This task uses the BOM (Browser Object Model) in javascript to change the width, and the top of the nav-bar when scroll is greater than 0, and changed too when the scroll equals to 0.
