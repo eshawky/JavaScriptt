@@ -4,15 +4,11 @@ getNews()
 
 async function getNews()
 {
-    var myResponse = await fetch(`https://dummyjson.com/products`);
-
-    //var finalResponse = await JSON.parse(myResponse); 
-    //var finalResponse  = await Response.json(myResponse);
+    var myResponse    = await fetch(`https://dummyjson.com/products`);
     var finalResponse = await myResponse.json(); 
- 
+    allItems          = await finalResponse.products;
+
     console.log(finalResponse);
-    
-    allItems = await finalResponse.products;
     console.log(allItems.length);
 
     displayBusiness();
