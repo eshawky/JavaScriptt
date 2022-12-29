@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقديم طلب الحصول علي تصريح </title>
+
+  <link rel="icon" type="image/x-icon" href="../imgs/logo.png">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/validation.css">
+  <link rel="stylesheet" type="text/css" href="../css/request.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Work+Sans:ital,wght@0,200;0,400;0,500;0,600;0,800;1,300&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container w-100 ">
+
+      <nav class="navbar navbar-expand-lg bg-dark sticky-top" id="nav">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+                  <li class="nav-item">
+                      <a class="nav-link main_text" href="index2.html">الصفحة الرئيسية</a>
+                  </li>
+
+
+                  <li class="nav-item">
+                      <a class="nav-link  main_text" href="task1.html">تقديم طلب</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link main_text" href="task2.html">متابعة الطلب</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link main_text" href="task3.html">تقديم الشكاوي</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link main_text" href="task4.html">شروط البناء</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link main_text" href="task5.html">دليل المناطق </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link main_text" href="task6.html"> 
+                      الاجراءات
+                    </a>                            
+                  </li>
+                  
+
+              </ul>
+              </div>
+              <div class="user"  id="user" onclick="window.location.href=`task7.html`">
+                <a><i class="fa fa-user"></i></a>
+            </div>
+          </div>
+      </nav>
+
+    <i class="fas fa-arrow-circle-up scrollTo" id="scrollTo"></i>
+
+    <div class="row" id="timer">
+      <p>
+        الوقت المسموح لتعديل الطلب
+        دقيقة واحدة
+      </p>
+
+      <div id="demo"></div>
+
+    </div>
+
+    <div class="error sign_class" id="sign_error">
+      <p id="sign_p_error"></p>
+    </div>
+
+    <form class="main-form form" id="form">
+
+      <div class="error div_class" id="div_error">
+        <p id="p_error"></p>
+      </div>
+
+      <div class="data">
+
+        <div class="personal col-md-6">
+          <label for="name_form">الاسم الثلاثي باللغة العربية</label>
+          <input type="text" id="name_form" class="form-control">
+          <p class="ifValid" id="ifvalid_name"></p>
+
+          <label for="id_form">الرقم القومي</label>
+          <input type="text" id="id_form" class="form-control">
+          <p class="ifValid" id="ifvalid_id"></p>
+
+          <label for="mail_form">البريد الالكتروني</label>
+          <input type="text" id="mail_form" class="form-control">
+          <p class="ifValid" id="ifvalid_mail"></p>
+
+          <label for="gender_form">الجنس</label>
+          <select id="gender_form" name="track" class="form-control">
+            <option value="ذكر"> ذكر </option>
+            <option value="انثي"> انثي</option>
+          </select>
+          <p class="ifValid" id="ifvalid_gender"></p>
+
+          <label for="pass_form">كلمة المرور</label>
+          <input type="password" id="pass_form" class="form-control">
+          <p class="ifValid" id="ifvalid_pass"></p>
+
+          <label for="pass2_form"> كلمة المرور مرة اخري</label>
+          <input type="password" id="pass2_form" class="form-control">
+          <p class="ifValid" id="ifvalid_pass2"></p>
+
+        </div>
+
+        <div class="land  col-md-6">
+
+          <label for="governorate_form">المحافظه</label>
+          <select id="governorate_form" name="governorate" class="form-control">
+            <option value="القاهرة"> القاهرة </option>
+            <option value="الجيزة"> الجيزة</option>
+            <option value="الإسكندرية"> الإسكندرية</option>
+            <option value="الإسماعيلية"> الإسماعيلية</option>
+            <option value="أسوان"> أسوان</option>
+            <option value="أسيوط"> أسيوط</option>
+            <option value="الأقصر"> الأقصر</option>
+            <option value="البحر الأحمر"> البحر الأحمر</option>
+            <option value="البحيرة"> البحيرة</option>
+            <option value="بني سويف"> بني سويف</option>
+            <option value="بورسعيد"> بورسعيد</option>
+            <option value="جنوب سيناء"> جنوب سيناء</option>
+            <option value="الدقهلية"> الدقهلية</option>
+            <option value="دمياط"> دمياط</option>
+            <option value="سوهاج"> سوهاج</option>
+            <option value="السويس"> السويس</option>
+            <option value="الشرقية"> الشرقية</option>
+            <option value="شمال سيناء"> شمال سيناء</option>
+            <option value="الغربية"> الغربية </option>
+            <option value="الفيوم"> الفيوم </option>
+            <option value="القليوبية"> القليوبية </option>
+            <option value="قنا"> قنا </option>
+            <option value="كفر الشيخ"> كفر الشيخ </option>
+            <option value="قنا"> قنا </option>
+            <option value="مطروح"> مطروح </option>
+            <option value="المنوفية"> المنوفية </option>
+            <option value="المنيا"> المنيا </option>
+            <option value="الوادي الجديد"> الوادي الجديد </option>
+
+          </select>
+          <p class="ifValid" id="ifvalid_governorate"></p>
+
+          <label for="section_form">المركز</label>
+          <input type="text" id="section_form" class="form-control">
+
+          <p class="ifValid" id="ifvalid_section"></p>
+
+          <label for="area_form">المساحة (بالمتر مربع) </label>
+          <input type="text" id="area_form" class="form-control">
+          <p class="ifValid" id="ifvalid_area"></p>
+
+          <label for="borders">اسماء مالكي الحدود من جميع الجهات</label>
+
+          <input type="text" id="borders_north" class="form-control mt-1" placeholder="شمال">
+          <input type="text" id="borders_south" class="form-control mt-1" placeholder="جنوب">
+          <input type="text" id="borders_east" class="form-control mt-1" placeholder="شرق">
+          <input type="text" id="borders_west" class="form-control mt-1" placeholder="غرب">
+          <p class="ifValid" id="ifvalid_border"></p>
+
+          <label for="file"> قم بتحميل صورة عقد ملكية الارض </label>
+          <br>
+          <input type="file" id="file" class="btn text" multiple />
+
+        </div>
+
+
+      </div>
+
+
+      <input type="submit" id="add_id" class="btn myButton submit butt" onclick="validateRequest()" value="تقديم الطلب" />
+      <input type="submit" id="update_id" class="btn myButton submit butt" onclick="validateRequest()" value=" تعديل الطلب" />
+
+    </form>
+
+    <div class="request" id="allRequests">
+
+      <table class="table col-md-12" id="table" border="2">
+        <thead id="thead">
+          <td> كود الطلب </td>
+          <td> الاسم الثلاثي باللغة العربية</td>
+          <td> الرقم القومي</td>
+          <td> الايميل</td>
+          <td> النوع</td>
+          <td> كلمة المرور</td>
+          <td>المحافظة</td>
+          <td>المركز</td>
+          <td>المساحة</td>
+          <td>الغاء</td>
+          <td>تعديل</td>
+
+        </thead>
+
+        </thead>
+        <tbody id="tbody">
+
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+        
+  <div class="footers" id="footer">
+
+    <div class="row top">
+
+        <div class="links col-md-12">
+
+            <a href="#"> <i class="fa-brands fa-footer fa-square-facebook"></i> </a>
+            <a href="#"> <i class="fa-brands fa-footer fa-linkedin"></i> </a>
+            <a href="#"> <i class="fa-brands fa-footer fa-youtube"></i> </a>
+            <a href="#"> <i class="fa-brands fa-footer fa-github"></i></a>
+
+        </div>             
+                  
+    </div>
+
+    <div class="row bottom">
+
+        <div class="copyrights col-md-12 text">
+           All Copyright reserved
+        </div>
+      </div>
+
+  </div>
+
+  <script src="../js/jquery-3.6.1.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/request.js"></script>
+
+</body>
+
+</html>

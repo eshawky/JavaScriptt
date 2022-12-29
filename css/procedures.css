@@ -1,0 +1,145 @@
+:root
+{
+	--color1: black;
+	--color2:red;
+	--color3: white; 
+	--color4:green;
+	--dark-color:#19283f;
+	--green-color:#90EE90;
+	--color5: #173470;
+	--color6: #fed018;
+	--color7: #ebfe18;
+
+}
+
+.navbar
+{
+	width:100%;
+	position        : fixed;
+}
+
+.procedures
+{
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top:50px;
+}
+
+.title
+{
+
+	width: 200px;
+	height: 200px;
+	background-color: var(--color4);
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	position: relative;
+	z-index: 3;
+}
+
+.title img
+{
+	padding-top: 20px;
+	width:90%;
+	height: 60%;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.title .text
+{
+	font-size: 30px;
+}
+
+.title:hover, .title:focus, .title:active 
+{
+	animation: titleAnimation 1s;
+}
+
+@keyframes titleAnimation 
+{
+	25% 
+	{
+			transform: rotate(10deg);
+	}
+
+	100% 
+	{
+			transform: rotate(0deg);
+
+	}
+}
+
+
+.content
+{
+	width: 60%;
+	height: auto;
+	background-color: var(--color6);
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+	align-items: center;
+	border-top-left-radius:  50px;
+	border-bottom-right-radius:  50px;
+	border-width: thick;
+	margin-top: -30px;
+	padding-bottom: 30px;
+	
+}
+
+.content .content1
+{
+	display: flex;
+	flex-direction: row;
+
+	border: 1px solid;
+	border-radius: 25px;
+	width:80%;
+	height:10%;
+	margin-top: 50px;
+	background-color: var(--color3) !important;
+	pointer: cursor;
+}
+
+.content .content1 img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+}
+
+#steps_div
+{
+	display: none;
+}
+
+#docs_div
+{
+	display: none;
+}
+
+#terms_div
+{
+	display: none;
+}
+
+#pay_div
+{
+	display: none;
+}
+
+#time_div
+{
+	display: none;
+}
+
+.point
+{
+	font-size: 50px;
+}
