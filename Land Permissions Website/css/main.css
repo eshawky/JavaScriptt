@@ -74,7 +74,7 @@ body
 	background-color: var(--color1) !important;
 
 	width:100% !important;
-	height:40px !important;
+	/*height:40px !important;*/
 
 }
 
@@ -99,11 +99,11 @@ body
     border: white;
 }
 
-.myNav
+.user
 {
-	display: flex !important;
-	flex-direction: column !important;
+	cursor: pointer;
 }
+
 
 .carousel-inner img
 {
@@ -406,11 +406,6 @@ li
 .imgmanger img
 {
 	border-radius: 10px;
-}
-
-.user
-{
-	cursor: pointer;
 }
 
 .personal:hover
