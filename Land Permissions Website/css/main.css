@@ -74,8 +74,7 @@ body
 	background-color: var(--color1) !important;
 
 	width:100% !important;
-	height:40px !important;
-
+	/*height:50px !important;*/
 }
 
 .navbar .navbar-nav .nav-link
@@ -102,6 +101,9 @@ body
 .user
 {
 	cursor: pointer;
+	height:10px;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 
 
@@ -263,6 +265,7 @@ body
 {
 	color: var(--color4);
 }
+
 .fa-footer
 {
 	font-size: 50px;
@@ -301,7 +304,6 @@ li
     width:100%;
 	height: 100vh;
 	background-size: cover;
-
 }
 
 .nocaces 
